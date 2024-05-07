@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Durma mais, viva mais</title>
+
+  <link rel="icon" href="ovelha.png" sizes="32x32">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!--<link rel="stylesheet" href="style.css">-->
+
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+    .menuFonte
+    {
+      font-family: 'Mooli', sans-serif;
+      font-size: 16px;
+    }
+
+    .corFonteMenu
+    { 
+      color: white;
+      font-weight: bold;
+    }
+
+    .corNav
+    {
+      background-color: #071243;
+    }
+
+    .corPagina
+    {
+      background-color: #071243;
+    }
+
+    .centralizaConteudo{
+      text-align: center;
+    }
+
+    .entrar
+    {
+      background-color: white; 
+      padding:7px; 
+      font-size: 15px;
+      margin-right: 15px;
+      margin-top: 12px; 
+      border-radius: 10px; 
+      font-family: 'Mooli', sans-serif;
+    }
+
+    .corFonteMenu:hover{
+      color: #a6aef6;
+    }
+
+    @media(min-width: 320px) and (max-width: 480px) 
+    {
+      .col-md-2
+      {
+        width: 50px;
+      }
+    }
+
+    .semBorda
+    {
+      border-style: none;
+    }
+    
+   
+	</style>
+
+</head>
+<body class="corPagina">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+	<!--início navbar-->
+
+	<nav class="navbar navbar-expand-lg corNav" style="width: 99%;">
+  <div class="container-fluid">
+    <a class="navbar-brand corFonteMenu" href="#"><image><img src="ovelha.png" height="40px"></image></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 menuFonte">
+        <li class="nav-item">
+          <a class="nav-link active" style="color: white; font-weight: bold;" aria-current="page" href="#">Início</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link corFonteMenu" href="sobre.html">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link corFonteMenu" href="sono.html">Seu Sono</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link corFonteMenu" href="posts.html">Posts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link corFonteMenu" href="quiz.html">Quiz</a>
+        </li>
+        
+      </ul>
+      
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline" style="background-color: rgba(255,255,255,0.5); color: white;" type="submit"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
+  </div>
+  </nav>
+
+
+  <!--<div class="container text-center">
+  <div class="row">
+    <div class="col-md-8" style="color: white;">
+      
+    </div>
+    <div class="col-md-4">
+      <image><img src=""></image>
+    </div>
+  </div>
+  </div>-->
+  <div class="container-fluid">
+    <br>
+    <div class="row">
+      <br><br>
+      <div class="col-md-1"></div>
+    <div id="carouselExampleIndicators" class="carousel slide col-md-10">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner" style="border-radius: 20px;">
+        <div class="carousel-item active">
+          <img src="carrossel1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="sobre.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="pagina3.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="col-md-1"></div>
+  <br><br>
+  
+  <div class="row" style="color: white;">
+  <div class="col-md-1"></div>
+    <h3 class="col-md-10 mt-4 mb-4"><i class="bi bi-emoji-smile"></i> Conheça-nos! </h3>
+  <div class="col-md-1"></div>
+  </div>
+  <div class="row" style="color: white;">
+    <div class="col-md-1"></div>
+      <h4 class="col-md-10 mt-4 mb-4" style="font-weight: normal;"> Clique nas fotos e saiba mais: </h4>
+    <div class="col-md-1"></div>
+    </div>
+  <br><br>
+
+  </div>
+
+  <div class="row" style="width: 99%;">
+
+  <div class="col-md-1"></div>
+
+  <div class="col-md-10" style="background-color: #7278b083; border-radius: 30px;">
+
+    <br><br>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-4">
+        <div type="button" class="btn" data-bs-toggle="popover" data-bs-title="Eduarda Meffe Rubbini" data-bs-content="Oiii, sou a Eduarda, estou no 3º ano do Técnico de enfermagem no COTIL. Gosto muito de viajar, ir à Igreja, estudar, cuidar das minhas samambaias, e de muitas outras coisas. Aprendi muita coisa com esse projeto, e quero que você aprenda bastante também, para que o seu sono e desempenho nos estudos sejam muito positivos!" style="border-radius: 100%; height:250px; width:250px; border-color: transparent; background-image: 
+        url(2.png);">
+        </div>
+      </div>      
+      <div class="col-md-4">
+    
+        <div type="button" class="btn" data-bs-toggle="popover" data-bs-title="Gabrielly Farias da Silva" data-bs-content="Oi! Eu sou a Gabrielly, estudante do 3° ano do Técnico de Enfermagem integrado ao ensino médio do COTIL. Amo ouvir louvores, cantar e tocar teclado, gosto muito de momentos em família, ler livros, visitar lugares novos e fazer amizades. Bom, eu faço parte do projeto 'Durma Mais, Viva Mais' que busca aprender mais sobre o sono e seus benefícios para melhorias na qualidade de vida dos estudantes e espero que através desse site, você possa desfrutar das informações e ser um disseminador desse conteúdo." style="border-radius: 100%; height:250px; width:250px; border-color: transparent; background-image: 
+        url(gaby1.jpg);"></div>
+      
+      </div>
+
+      <div class="col-md-4">
+          <div type="button" class="btn" data-bs-toggle="popover" data-bs-title="João Miguel de Oliveira Ferreira" data-bs-content="Olá, sou o João. Estudante do 3° Ano do Técnico em Enfermagem no COTIL, amo carros, gosto de ler, desenhar e ir ao cinema. Eu faço parte desse projeto e espero que você possa aprender sobre os benefícios de uma boa noite de sono." style="border-radius: 100%; height:250px; width:250px; border-color: transparent; background-image: 
+          url(joao.jpg);">
+          </div>
+        </div>
+
+
+      
+    </div>
+
+    <br><br>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div type="button" class="btn" data-bs-toggle="popover" data-bs-title="Julia Vieira Roza" data-bs-content="Estudante do 3° Ano do Técnico em Enfermagem no COTIL! Gosto muito da cor azul, música gospel e filmes/séries e estou aprendendo a dormir melhor com o nosso projeto, espero que você também esteja aprendendo!💜" style="border-radius: 100%; height:250px; width:250px; border-color: transparent; background-image: 
+          url(ju1.jpg);">
+          </div>
+        </div>
+        <div class="col-md-4">
+        
+          <div type="button" class="btn" data-bs-toggle="popover" data-bs-title="Ketlyn Christina Natal" data-bs-content="Olá pessoal sou Ketlyn mais conhecida por Ket, sou estudante do 3° enfermagem Diurno, estou nesse projeto para ajudar vocês a dormirem melhor, meus melhores momentos são passar em família, ler, assistir séries e filmes, ir a igreja, estudar e fazer pesquisas além de amar tudo relacionado a Harry Potter." style="border-radius: 100%; height:250px; width:250px; border-color: transparent; background-image: 
+          url(katy1.jpg);"></div>
+        
+        </div>
+
+        <div class="col-md-4">
+        <div type="button" class="btn" data-bs-toggle="popover" data-bs-title="Maria Giovana Pedroso" data-bs-content="Oiê! Eu sou a Maria Giovana, estudante do 3°ano do Técnico em Enfermagem Integrado ao Ensino Médio Diurno no COTIL! Amo tudo relacionado a arte, adoro descobrir coisas novas e fazer amizades, e estou junto aos meus amigos neste projeto para ajudá-lo a dormir melhor e compreender seu ciclo de sono!🖤" style="border-radius: 100%; height:250px; width:250px; border-color: transparent; background-image: 
+        url(gih.png);">
+        </div>
+      </div>
+  
+      </div></div>
+
+    <br><br>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div type="button" class="btn" data-bs-toggle="popover" data-bs-title="Mariáh Dituri Gomes" data-bs-content="Oie! Eu sou a Mariáh, estudante do 3°ano do Técnico em Enfermagem Integrado ao Ensino Médio Diurno no COTIL. Gosto de livros, filmes, séries, música e estou nesse projeto porque acredito que entender mais sobre o sono e sua importância pode melhorar muito sua qualidade de vida❤❤" style="border-radius: 100%; height:250px; width:250px; border-color: transparent; background-image: 
+          url(mah1.jpg);">
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+
+      <br><br>
+  
+      </div></div>
+
+  </div>
+
+  <br><br>
+  
+  </div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-1"></div>
+
+</div>
+
+<br><br>
+
+<div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+
+  <path fill="#1917B0" fill-opacity="1" d="M0,256L48,240C96,224,192,192,288,176C384,160,480,160,576,165.3C672,171,768,181,864,
+  176C960,171,1056,149,1152,122.7C1248,96,1344,64,1392,48L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,
+  864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+
+  <path fill="#12117D" fill-opacity="1" d="M0,160L34.3,138.7C68.6,117,137,75,206,58.7C274.3,43,343,53,411,90.7C480,128,549,192,617,
+  224C685.7,256,754,256,823,240C891.4,224,960,192,1029,181.3C1097.1,171,1166,181,1234,202.7C1302.9,224,1371,256,1406,272L1440,288L1440,
+  320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,
+  480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+
+  <path fill="#2D1794" fill-opacity="1" d="M0,256L40,245.3C80,235,160,213,240,197.3C320,181,400,171,480,154.7C560,139,640,117,720,
+  96C800,75,880,53,960,80C1040,107,1120,181,1200,192C1280,203,1360,149,1400,122.7L1440,96L1440,320L1400,320C1360,320,1280,320,1200,
+  320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,
+  320Z"></path>
+  
+  </svg>
+  
+</div>
+
+<script type="text/javascript">
+  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+  const popover = new bootstrap.Popover('.example-popover', {
+  container: 'body'
+})
+
+</script>
+	
+
+
+
+  <!--fim container cursos-->
+
+</body>
+</html>

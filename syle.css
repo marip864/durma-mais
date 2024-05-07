@@ -1,0 +1,36 @@
+.menuFonte
+    {
+      font-family: 'Mooli', sans-serif;
+      font-size: 15px;
+    }
+
+    .corFonteMenu
+    { 
+      color: white;
+      font-weight: bold;
+    }
+
+    .corNav
+    {
+      background-color: #011F45;
+    }
+
+    .corPagina
+    {
+      background-color: #011F45;
+    }
+
+    .centralizaConteudo{
+      text-align: center;
+    }
+
+    .entrar
+    {
+      background-color: white; 
+      padding:7px; 
+      font-size: 15px;
+      margin-right: 15px;
+      margin-top: 12px; 
+      border-radius: 10px; 
+      font-family: 'Mooli', sans-serif;
+    }

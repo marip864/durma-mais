@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Durma mais, viva mais</title>
+
+  <link rel="icon" href="ovelha.png" sizes="32x32">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+    .menuFonte
+    {
+      font-family: 'Mooli', sans-serif;
+      font-size: 16px;
+    }
+
+    .corFonteMenu
+    { 
+      color: white;
+      font-weight: bold;
+    }
+
+    .corNav
+    {
+      background-color: #071243;
+    }
+
+    .corPagina
+    {
+      background-color: #071243;
+    }
+
+    .entrar
+    {
+      background-color: white; 
+      padding:7px; 
+      font-size: 15px;
+      margin-right: 15px;
+      margin-top: 12px; 
+      border-radius: 10px; 
+      font-family: 'Mooli', sans-serif;
+    }
+
+    .corFonteMenu:hover{
+      color: #a6aef6;
+    }
+   
+    .semBorda
+    {
+      border-style: none;
+      text-align: center;
+    }
+
+    .branco
+    {
+      color: aliceblue;
+    }
+
+  </style>
+
+  <script>
+    const collapseElementList = document.querySelectorAll('.collapse')
+    const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
+
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+
+</head>
+<body class="corPagina">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+  <!--início navbar-->
+
+  <nav class="navbar navbar-expand-lg corNav">
+  <div class="container-fluid">
+    <a class="navbar-brand corFonteMenu" href="index.html"><image><img src="ovelha.png" height="40px"></image></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 menuFonte">
+        <li class="nav-item">
+          <a class="nav-link active" style="color: white; font-weight: bold;" aria-current="page" href="index.html">Início</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link corFonteMenu" href="sobre.html">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #94dced; font-weight: bold;" href="sono.html">Seu Sono</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link corFonteMenu" href="posts.html">Posts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link corFonteMenu" href="quiz.html">Quiz</a>
+        </li>
+        
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline" style="background-color: rgba(255,255,255,0.5); color: white;" type="submit"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
+  </div>
+  </nav>
+
+  <br><br>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-12" style="color: white;"><h6 class="display-6">
+        <i class="bi bi-question-circle"></i> Perguntas e Respostas sobre o sono! </h6>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-5">
+        <div class="card container">
+          <div class="card-body">
+            <h5 class="card-title display-8">Quais os efeitos do sono em nossas vidas?</h5>
+            <p class="card-text">
+            <p class="d-inline-flex gap-1">
+              <a class="btn btn-primary" style="background-color: #9930a5;" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Resposta
+              </a>
+            </p>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                O sono tem efeito restaurador nos sistemas imunológico e endócrino, facilita a recuperação do sistema nervoso e metabólico, consolidação da memória, aprendizado, bem-estar, saúde mental; vitalidade fisiológica, emocional, cognitiva e física; concentração e promoção do bom desempenho acadêmico. (DOHERTY, Rónán et al, 2019).
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="card container">
+          <div class="card-body">
+            <h5 class="card-title">Quais os prezuíjos da privação do sono?</h5>
+            <p class="card-text">
+            <p class="d-inline-flex gap-1">
+              <a class="btn btn-primary" style="background-color: #9930a5;" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Resposta
+              </a>
+            </p>
+            </p>
+            <div class="collapse" id="collapseExample2">
+              <div class="card card-body">
+                Os prejuízos da privação do sono, levam a ocorrência de distúrbios, físicos (respiratórios, cardiovasculares e metabólicos como diabetes mellitus tipo 2), neurológicos (depressão, ansiedade e estresse, dificuldade de aprendizado e perda da memória). (TATAR, Dominika et al, 2023). Alterações comportamentais (irritabilidade, comportamentos agitados, a dificuldade de concentração, a redução da capacidade cognitiva e comportamentos suicidas). (MAHESHWARI, Ganpat; SHAUKAT, Faizan, 2019).
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  
+  <br>
+
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
+      <div class="card container">
+        <div class="card-body">
+          <h5 class="card-title display-8">Qual a importância do sono?</h5>
+          <p class="card-text">
+          <p class="d-inline-flex gap-1">
+            <a class="btn btn-primary" style="background-color: #9930a5;" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Resposta
+            </a>
+          </p>
+          </p>
+          <div class="collapse" id="collapseExample4">
+            <div class="card card-body">
+              O sono é fundamental para a manutenção da saúde e qualidade de vida, com efeito, restaurador no sistema imunológico e no sistema endócrino, facilita a recuperação do sistema nervoso e metabólico, consolidação da memória, aprendizado, bem-estar, saúde mental; vitalidade fisiológica, emocional, cognitiva e física; concentração e promoção do bom desempenho acadêmico. (Doherty, et al, 2019).
+              <br><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="card container">
+        <div class="card-body">
+          <h5 class="card-title">Qual a quantidade de horas de sono ideal?</h5>
+          <p class="card-text">
+          <p class="d-inline-flex gap-1">
+            <a class="btn btn-primary" style="background-color: #9930a5;" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Resposta
+            </a>
+          </p>
+          </p>
+          <div class="collapse" id="collapseExample5">
+            <div class="card card-body">
+              Para que a efetividade das funções do sono sejam realizadas, é necessário manter uma qualidade e quantidade de sono, que variam conforme a faixa etária, sendo recomendado para os adolescentes de catorze a dezessete anos de 8 a 9 horas (HIRSHKOWITZ , Max et al, 2015).
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-1"></div>
+
+  <br>
+
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
+      <div class="card container">
+        <div class="card-body">
+          <h5 class="card-title display-8">Afinal, o que é a qualidade do sono?</h5>
+          <p class="card-text">
+          <p class="d-inline-flex gap-1">
+            <a class="btn btn-primary" style="background-color: #9930a5;" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Resposta
+            </a>
+          </p>
+          </p>
+          <div class="collapse" id="collapseExample3">
+            <div class="card card-body">
+              Qualidade de sono é quando o indivíduo conhece os hábitos de higiene do sono, que promovem um boa qualidade de vida, a percepção de bem-estar e melhoram a saúde. (AZEVEDO, Carolina V. M. et al, 2008).
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="card container">
+        <div class="card-body">
+          <h5 class="card-title">Quais os fatores que afetam a qualidade do sono?</h5>
+          <p class="card-text">
+          <p class="d-inline-flex gap-1">
+            <a class="btn btn-primary" style="background-color: #9930a5;" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Resposta
+            </a>
+          </p>
+          </p>
+          <div class="collapse" id="collapseExample1">
+            <div class="card card-body">
+              Maus hábitos de vida, como, consumo regular de substâncias psicoativas ou estimulantes (tabaco, álcool e café), o sedentarismo, hábitos alimentares inapropriados. (ARAÚJO, Mayonara Fabíola Silva et al, 2021).   Além do uso de dispositivos eletrônicos na hora de dormir, muitas atividades escolares, menor supervisão dos pais na hora de dormir, estresse percebido e horário preferido de dormir mais tarde. (GRASSAS , Erik et al, 2023).
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-1"></div>
+
+
+  </div>
+
+  <br><br><br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12" style="color: white;"><h6 class="display-6">
+        <i class="bi bi-stars"></i> Lista de hábitos de higiene do sono </h6>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <br>
+
+  <div class="container" style="background-color: rgba(125, 164, 227, 0.6); padding: 20px; border-radius: 10px;">
+
+    <ul>
+      <li class="lead" style="color:white">Manter uma rotina de sono;</li>
+      <li class="lead" style="color:white">Evitar sonecas durante o dia;</li>
+      <li class="lead" style="color:white">Exponha-se à luz do sol logo que acordar e no final da tarde;</li>
+      <li class="lead" style="color:white">Não consumir bebidas estimulantes (cafeína, chocolate, bebidas alcoólicas, chá preto, chá verde e refrigerantes) antes de dormir;</li>
+      <li class="lead" style="color:white">Não comer alimentos muito pesados no jantar, além de evitar estimulantes como açúcares ou comidas picantes;</li>
+      <li class="lead" style="color:white">Manter o ambiente silencioso e tranquilo;</li>
+      <li class="lead" style="color:white">Manter o quarto escuro com luz indireta;</li>
+      <li class="lead" style="color:white">Fazer exercícios de relaxamento e faça manejo do estresse;</li>
+      <li class="lead" style="color:white">Tome um banho relaxante antes de dormir;</li>
+      <li class="lead" style="color:white">Praticar exercícios físicos com regularidade, mas não antes de deitar;</li>
+      <li class="lead" style="color:white">Usar roupas confortáveis e adequadas para o clima;</li>
+      <li class="lead" style="color:white">Não usar a cama para outras atividades não relacionadas ao sono, com estudar; </li>
+      <li class="lead" style="color:white">Ficar longe de telas, como celulares, televisão e tablets pelo menos uma hora antes de dormir;</li>
+      <li class="lead" style="color:white">Se possível manter horários fixos para dormir e acordar</li>
+
+    </ul>
+
+    
+  </div>
+
+  <br><br><br>
+
+  <div class="container-fluid">
+    <br>
+    <div class="row">
+      <br><br>
+      <div class="col-md-1"></div>
+    <div id="carouselExampleIndicators" class="carousel slide col-md-10">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner" style="border-radius: 20px;">
+        <div class="carousel-item active">
+          <img src="4 (2).png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="5 (2).png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="6 (2).png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="col-md-1"></div>
+  </div>
+  
+  <br><br><br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12" style="color: white;"><h6 class="display-6">
+        <i class="bi bi-stars"></i> Efeitos da má qualidade de sono! </h6>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <br>
+
+  <div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <ul class="list-group">
+        <li class="list-group-item semBorda" style="background-color: #5866e495;">
+          <h5 class="branco">Obesidade</h5>
+        </li>
+        <li class="list-group-item semBorda">
+          <image>
+            <img src="obesidade.png">
+          </image>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <ul class="list-group">
+        <li class="list-group-item semBorda" style="background-color: #5866e495;">
+          <h5 class="branco">Hipertensão</h5>
+        </li>
+        <li class="list-group-item semBorda">
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-9">
+              <image>
+                <img src="hipertensao.png">
+              </image>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+          
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <ul class="list-group">
+        <li class="list-group-item semBorda" style="background-color: #5866e495;">
+          <h5 class="branco">Alzheimer</h5>
+        </li>
+        <li class="list-group-item semBorda">
+          <image>
+            <img src="alzheimer.png">
+          </image>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="row">
+    <div class="col-md-4">
+      <ul class="list-group">
+        <li class="list-group-item semBorda" style="background-color: #5866e495;">
+          <h5 class="branco">Ansiedade</h5>
+        </li>
+        <li class="list-group-item semBorda">
+          <image>
+            <img src="ansiedade.jpg">
+          </image>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <ul class="list-group">
+        <li class="list-group-item semBorda" style="background-color: #5866e495;">
+          <h5 class="branco">Depressão</h5>
+        </li>
+        <li class="list-group-item semBorda">
+          <image>
+            <img src="depressao.png">
+          </image>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <ul class="list-group">
+        <li class="list-group-item semBorda" style="background-color: #5866e495;">
+          <h5 class="branco">Diabetes</h5>
+        </li>
+        <li class="list-group-item semBorda">
+          <image>
+            <img src="diabetes.jpg">
+          </image>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  </div>  
+
+  <br><br>
+
+
+<br><br>
+
+
+
+  <script text="javascript">
+
+const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+
+if (toastTrigger) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+  toastTrigger.addEventListener('click', () => {
+    toastBootstrap.show()
+  })
+}
+    
+    const toastElList = document.querySelectorAll('.toast')
+    const toastList = [...toastElList].map(toastEl => new bootstrap.Toast(toastEl, option))
+  </script>
+
+  <br>
+
+  

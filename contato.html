@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Durma mais, viva mais</title>
+
+  <link rel="icon" href="ovelha.png" sizes="32x32">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="style.css">
+
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+    .menuFonte
+    {
+      font-family: 'Mooli', sans-serif;
+      font-size: 16px;
+    }
+
+    .corFonteMenu
+    { 
+      color: white;
+      font-weight: bold;
+    }
+
+    .corNav
+    {
+      background-color: #011F45;
+    }
+
+    .corPagina
+    {
+      background-color: #011F45;
+    }
+
+    .entrar
+    {
+      background-color: white; 
+      padding:7px; 
+      font-size: 15px;
+      margin-right: 15px;
+      margin-top: 12px; 
+      border-radius: 10px; 
+      font-family: 'Mooli', sans-serif;
+    }
+
+    .corFonteMenu:hover{
+      color: #a6aef6;
+    }
+
+    a{
+      text-decoration: none;
+      color: white;
+    }
+   
+	</style>
+
+</head>
+<body class="corPagina">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+	<!--início navbar-->
+
+	<nav class="navbar navbar-expand-lg corNav">
+  <div class="container-fluid">
+    <a class="navbar-brand corFonteMenu" href="index.html"><image><img src="ovelha.png" height="40px"></image></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 menuFonte">
+        <li class="nav-item">
+          <a class="nav-link active" style="color: white; font-weight: bold;" aria-current="page" href="index.html">Início</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link corFonteMenu" href="sobre.html">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link corFonteMenu" href="sono.html">Seu Sono</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link corFonteMenu" href="posts.html">Posts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #94dced; font-weight: bold;" href="contato.html">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link corFonteMenu" href="quiz.html">Quiz</a>
+        </li>
+        
+      </ul>
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline" style="background-color: rgba(255,255,255,0.5); color: white;" type="submit"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
+  </div>
+  </nav>
+
+  <hr>
+
+  <div class="container corContainer">
+
+		<div class="row mb-2" style="color:white;">
+			<h6 class="display-6"><i class="bi bi-send"></i> Contato: </h6>
+			<p class="lead">Preencha o formulário abaixo: </p>	
+
+      <form class="needs-validation" novalidate>
+      <div class="row">
+
+        <div class="col-md-6 col-sm-12 mb-3">
+          
+          <div class="form-floating mb-3">
+            <input type="text" required class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput" style="color: #838493;">Nome</label>
+          
+
+          <div class="invalid-feedback" style="color: #D8F8FF;">
+            Campo obrigatório!
+          </div></div>
+            
+        </div>
+        <div class="col-md-4 col-sm-12 mb-3">
+          
+          <div class="form-floating mb-3">
+            <input type="email" required class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput" style="color: #838493;">E-mail</label>
+          
+
+          <div class="invalid-feedback" style="color: #D8F8FF;">
+            Campo obrigatório!
+          </div></div>
+        </div>
+        <div class="col-md-2 col-sm-12 mb-3">
+          <div class="form-floating mb-3">
+            <input type="tel" required class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput" style="color: #838493;">Telefone</label>
+          
+
+          <div class="invalid-feedback" style="color: #D8F8FF;">
+            Campo obrigatório!
+          </div></div>
+          
+        </div>
+    
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-5 col-sm-12 mb-3">
+          <div class="form-floating mb-3">
+            <input type="text" required class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput" style="color: #838493;">Escola</label>
+          
+
+          <div class="invalid-feedback" style="color: #D8F8FF;">
+            Campo obrigatório!
+          </div></div>
+        </div>
+        <div class="col-md-3 col-sm-12 mb-3">
+          <div class="form-floating">
+            <select class="form-select" id="floatingSelectGrid">
+              <option selected>Selecione uma opção</option>
+              <option value="1">Cadastro</option>
+              <option value="2">Pesquisa</option>
+              <option value="3">Acompanhamento do sono</option>
+            </select>
+            <label for="floatingSelectGrid" style="color: #838493;">Dúvida sobre...</label>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 mb-3">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput" style="color: #838493;">Cidade</label>
+          </div>
+        </div>
+        
+        
+      </div>
+
+      <div class="row">
+
+        <div class="col-12 mb-3">
+          <div class="form-floating">
+            <textarea class="form-control" required placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2" style="color:#838493;">Mensagem</label>
+          
+
+          <div class="invalid-feedback" style="color: #D8F8FF;">
+            Campo obrigatório!
+          </div></div>
+        </div>
+        
+      </div>
+
+      <div class="row">
+        
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary"><i class="bi bi-send"></i> Enviar</button>
+
+          
+          <button type="reset" class="btn btn-primary"><i class="bi bi-x-circle"></i> Limpar</button>
+        </div>
+
+      </div>
+
+		</div>
+
+  </form>
+		
+	</div>
+
+  
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+const forms = document.querySelectorAll('.needs-validation')
+
+// Loop over them and prevent submission
+Array.from(forms).forEach(form => {
+  form.addEventListener('submit', event => {
+    if (!form.checkValidity()) {
+      event.preventDefault()
+      event.stopPropagation()
+    }
+
+    form.classList.add('was-validated')
+  }, false)
+})
+})()
+
+</script>
+ 
+
+  <br>
